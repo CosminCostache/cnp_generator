@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#cnp {
+    display: flex;
+    margin: 0 auto;
+}
+
+label {display: none;}

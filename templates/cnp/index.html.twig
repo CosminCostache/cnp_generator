@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CNP Generator{% endblock %}
+
+{% block body %}
+    <!-- component -->
+    <div class="w-full bg-gray-200">
+        <div class="h-2 bg-indigo"></div>
+        <div class="flex items-center justify-center h-screen">
+            <div class="container mx-24 bg-white rounded shadow-lg">
+                <div class="px-12 py-6">
+                    <div class="text-center">
+                        <h1 class="font-normal text-3xl text-grey-darkest leading-loose my-3 w-full">Cod numeric personal Generator</h1>
+                        <div class="w-full text-center">
+                            <div class="max-w-sm mx-auto p-1 pr-0 flex items-center">
+                                {{ form_start(cnp_form) }}
+                                    {{ form(cnp_form) }}
+                                {{ form_end(cnp_form) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
